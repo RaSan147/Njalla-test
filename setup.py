@@ -9,7 +9,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            # Include any console scripts here
+
         ],
     },
 )
