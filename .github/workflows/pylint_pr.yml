@@ -23,7 +23,9 @@ jobs:
         pip install pylint
         OUTPUT=$(pylint **/*.py --exit-zero)
         #OUTPUT=$(shell command or script to extract the part your want)
-        echo "MESSAGE=$OUTPUT" >> $GITHUB_ENV
+        echo 'MESSAGE<<EOF' >> $GITHUB_ENV
+        echo  "$OUTPUT"  >> $GITHUB_ENV
+        echo 'EOF' >> $GITHUB_ENV
     - name: Post result to PR
       uses: mshick/add-pr-comment@v1
       with:
