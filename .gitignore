@@ -1,3 +1,6 @@
 .idea/
 venv
 *workspace
+build/
+dist/
+*.egg-info
