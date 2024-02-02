@@ -1,9 +1,4 @@
 import requests
-from .Domain import NjallaDomain
-from .Server import NjallaServer
-from .User import NjallaUser
-from .VPN import NjallaVPN
-from .Wallet import NjallaWallet
 
 class NjallaAPI:
     def __init__(self, api_key):
@@ -24,4 +19,4 @@ class NjallaAPI:
             "paypal": "paypal"
         }
 
-    Wallet = NjallaWallet
+    # API functions will be added later
